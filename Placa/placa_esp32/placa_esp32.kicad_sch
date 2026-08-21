@@ -1978,12 +1978,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_MEC_5G"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Switch:SW_DPST_x2"
 			(pin_names
-				(offset 1.016)
+				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -1992,18 +1989,17 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
-				(at 1.27 2.54 0)
+				(at 0 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "SW_MEC_5G"
-				(at 0 -1.524 0)
+			(property "Value" "SW_DPST_x2"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2013,28 +2009,6 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "MEC 5G single pole normally-open tactile switch"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2045,7 +2019,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2056,7 +2030,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SW*MEC*5G*"
+			(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2067,7 +2041,18 @@
 					)
 				)
 			)
-			(symbol "SW_MEC_5G_0_1"
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_DPST_x2_0_0"
 				(circle
 					(center -2.032 0)
 					(radius 0.508)
@@ -2081,7 +2066,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
+						(xy -1.524 0.254) (xy 1.524 1.778)
 					)
 					(stroke
 						(width 0)
@@ -2102,18 +2087,8 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			)
+			(symbol "SW_DPST_x2_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2142,7 +2117,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2151,11 +2126,10 @@
 					)
 				)
 			)
-			(symbol "SW_MEC_5G_1_1"
+			(symbol "SW_DPST_x2_2_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
-					(hide yes)
 					(name "A"
 						(effects
 							(font
@@ -2163,7 +2137,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2174,7 +2148,6 @@
 				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
-					(hide yes)
 					(name "B"
 						(effects
 							(font
@@ -3015,7 +2988,7 @@
 		(uuid "1639567d-4ceb-425c-b9cd-2989850ffae4")
 	)
 	(label "B_IN_1"
-		(at 97.79 99.06 0)
+		(at 97.79 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3055,7 +3028,7 @@
 		(uuid "1d4a881b-178e-4048-9193-ffff9a55c8af")
 	)
 	(label "STBY"
-		(at 97.79 58.42 0)
+		(at 97.79 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3085,7 +3058,7 @@
 		(uuid "4b821bdf-307d-4e73-8c53-1917ff9c0ee1")
 	)
 	(label "B_IN_2"
-		(at 97.79 101.6 0)
+		(at 97.79 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3095,7 +3068,7 @@
 		(uuid "5373ce90-c108-45ef-b003-7b7a3722aa40")
 	)
 	(label "PWM_B"
-		(at 97.79 55.88 0)
+		(at 97.79 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3365,7 +3338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D10.0mm_W2.5mm_P5.00mm"
 			(at 142.24 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -3408,6 +3381,92 @@
 			(project "placa_esp32"
 				(path "/936e56d6-7793-44eb-8e76-0eb47bdedc69"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 157.48 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c571d4e-917c-4371-987b-0c17b9b32b78")
+		(property "Reference" "SW1"
+			(at 157.48 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 157.48 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+			(at 157.48 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
+			(at 157.48 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "15d5eeda-c7a3-40ef-b23b-24b5d1e7f462")
+		)
+		(pin "3"
+			(uuid "64574929-a8cc-450b-8b59-017e8e74d6bf")
+		)
+		(pin "2"
+			(uuid "9f83d40b-2095-4a71-a94e-32b8a966b79b")
+		)
+		(pin "1"
+			(uuid "1df3cdaa-5ada-40d4-88e3-d43ee4190ade")
+		)
+		(instances
+			(project "placa_esp32"
+				(path "/936e56d6-7793-44eb-8e76-0eb47bdedc69"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3791,7 +3850,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mini_360:Mini360_step-down"
 			(at 180.34 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -3877,7 +3936,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
 			(at 125.73 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -3927,7 +3986,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_DC")
-		(at 201.93 80.01 0)
+		(at 186.69 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3938,7 +3997,7 @@
 		(fields_autoplaced yes)
 		(uuid "7cd1146c-eba5-45f4-9674-ec938ed778ca")
 		(property "Reference" "M2"
-			(at 207.01 81.2799 0)
+			(at 191.77 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3949,7 +4008,7 @@
 			)
 		)
 		(property "Value" "DER"
-			(at 207.01 83.8199 0)
+			(at 191.77 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3959,8 +4018,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 201.93 82.296 0)
+		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+			(at 186.69 82.296 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3971,7 +4030,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 82.296 0)
+			(at 186.69 82.296 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3982,7 +4041,7 @@
 			)
 		)
 		(property "Description" "DC Motor"
-			(at 201.93 80.01 0)
+			(at 186.69 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4041,7 +4100,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm"
 			(at 134.62 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -4091,7 +4150,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Motor_DC")
-		(at 186.69 80.01 0)
+		(at 201.93 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4102,7 +4161,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d914442-1ad0-4092-af9b-3014a444f543")
 		(property "Reference" "M1"
-			(at 191.77 81.2799 0)
+			(at 207.01 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4113,7 +4172,7 @@
 			)
 		)
 		(property "Value" "IZQ"
-			(at 191.77 83.8199 0)
+			(at 207.01 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4123,8 +4182,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 186.69 82.296 0)
+		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+			(at 201.93 82.296 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4135,7 +4194,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 82.296 0)
+			(at 201.93 82.296 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4146,7 +4205,7 @@
 			)
 		)
 		(property "Description" "DC Motor"
-			(at 186.69 80.01 0)
+			(at 201.93 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4166,92 +4225,6 @@
 			(project "placa_esp32"
 				(path "/936e56d6-7793-44eb-8e76-0eb47bdedc69"
 					(reference "M1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_MEC_5G")
-		(at 157.48 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b14c0295-2e6c-42ce-93a0-71dd87452dc4")
-		(property "Reference" "SW1"
-			(at 157.48 24.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_MEC_5G"
-			(at 157.48 26.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5G.pdf"
-			(at 157.48 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "MEC 5G single pole normally-open tactile switch"
-			(at 157.48 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "183347de-e8af-4f59-9df9-5947f3461424")
-		)
-		(pin "1"
-			(uuid "7f0eec3d-17ee-4af0-9772-040a115915d6")
-		)
-		(pin "4"
-			(uuid "c564b07c-e33c-4038-bbf4-745fef8975bf")
-		)
-		(pin "2"
-			(uuid "51203903-eb78-410f-88f4-16c9383cac06")
-		)
-		(instances
-			(project "placa_esp32"
-				(path "/936e56d6-7793-44eb-8e76-0eb47bdedc69"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -4367,7 +4340,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ROB-14450:MODULE_ROB-14450"
+		(property "Footprint" "TB6612:MODULE_ROB-14450"
 			(at 147.32 83.82 0)
 			(hide yes)
 			(show_name no)
