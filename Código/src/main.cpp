@@ -11,12 +11,12 @@ const int PIN_AIN1 = 4;
 const int PIN_AIN2 = 15;
 
 // Motor B
-const int PIN_PWMB = 5;
-const int PIN_BIN1 = 16;
-const int PIN_BIN2 = 17;
+const int PIN_PWMB = 18;
+const int PIN_BIN1 = 17;
+const int PIN_BIN2 = 5;
 
 // Standby
-const int PIN_STBY = 18;
+const int PIN_STBY = 16;
 
 // ============================================================
 // PWM
