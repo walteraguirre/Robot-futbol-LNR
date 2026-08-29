@@ -35,6 +35,11 @@ const int PWM_CHANNEL_B = 1;
 // Zona muerta del joystick
 const int ZONA_MUERTA = 15;
 
+
+const float FACTOR_A = 0.67;
+const float FACTOR_B = 1.00;
+
+
 // Limite de velocidad.
 // Para primeras pruebas recomiendo 150-180.
 // Maximo posible = 255.
@@ -43,6 +48,7 @@ const int VELOCIDAD_MAXIMA = 180;
 // ============================================================
 // MOTOR A
 // velocidad: -255 a +255
+// MOTOR IZQUIERDO
 // ============================================================
 
 void motorA(int velocidad)
@@ -75,6 +81,7 @@ void motorA(int velocidad)
 // ============================================================
 // MOTOR B
 // velocidad: -255 a +255
+// MOTOR DERECHO
 // ============================================================
 
 void motorB(int velocidad)
@@ -267,6 +274,9 @@ void loop()
     int velocidadA = avance + giro;
     int velocidadB = avance - giro;
 
+    velocidadA = (int)(velocidadA * FACTOR_A);
+    velocidadB = (int)(velocidadB * FACTOR_B);
+    
     // ========================================================
     // LIMITAR
     // ========================================================
